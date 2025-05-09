@@ -1,0 +1,151 @@
+/* Styling untuk section specifications */
+/* Pastikan section relative */
+.specifications {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0px 20px 60px;
+    color: #fff;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  
+  .aurora-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 0;
+    pointer-events: none;
+    /* optional kalau kamu pakai animasi atau penggeseran: */
+    /* transform: translateY(100px); */
+  }
+  
+  
+
+/* Gradient Shape */
+.specifications::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+    filter: blur(80px);
+    z-index: 0;
+}
+
+.specifications::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    right: -10%;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(202, 202, 202, 0.5) 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+    filter: blur(80px);
+    z-index: 0;
+}
+
+/* Styling untuk bagian atas dan bawah */
+.section-top, .section-bottom {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Gambar di kanan (bagian bawah) */
+.section-bottom {
+    grid-template-columns: 1fr 300px;
+}
+
+/* Styling untuk gambar laptop */
+.laptop-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Styling untuk konten teks */
+.content {
+    flex: 1;
+}
+
+/* Styling untuk judul dan paragraf */
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.section-bottom .content {
+    text-align: right;
+}
+
+/* 2. Tulisan NEW DESIGN & LED LIGHT jadi merah tanpa zoom */
+.specifications h2:hover {
+    color: red;
+    transition: color 0.3s ease-in-out;
+}
+
+@media (max-width: 992px) {
+    .section-top, .section-bottom {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    
+    .section-bottom {
+      grid-template-columns: 1fr;
+    }
+    
+    .section-bottom .content {
+      text-align: center;
+      order: 1;
+    }
+    
+    .section-bottom img {
+      order: 2;
+      margin: 0 auto;
+    }
+    
+    .laptop-image {
+      max-width: 280px;
+      margin: 0 auto;
+      display: block;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .specifications {
+      padding: 40px 15px;
+    }
+    
+    .laptop-image {
+      max-width: 220px;
+    }
+    
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  
+  

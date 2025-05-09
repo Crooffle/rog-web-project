@@ -1,0 +1,240 @@
+.flexibility {
+    text-align: center;
+    padding: 80px 20px;
+    background: radial-gradient(circle at bottom left, #666, #000 50%, #0a0442);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flexibility h2 {
+    position: relative;
+    top: -100px;
+}
+
+.use-cases {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 100px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.gaming, .editing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+}
+
+.editing p {
+    margin-top: 120px;
+}
+
+.gaming img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.editing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.editing img {
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 50, 0.8);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* 6. Tulisan "Available For" jadi merah dan zoom saat hover */
+
+
+/* Zoom gambar di section .flexibility */
+.flexibility .use-cases img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Glow hijau untuk fc25.png */
+.flexibility .gaming img {
+    transition: all 0.3s ease;
+}
+.flexibility .gaming img:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 0 15px 5px rgba(0, 255, 0, 0.6);
+}
+
+/* Glow ungu untuk Adobe Premiere Pro dan After Effects */
+.flexibility .editing img {
+    transition: all 0.3s ease;
+}
+
+.flexibility .editing img:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 0 15px 5px rgba(138, 43, 226, 0.6);
+}
+
+.flexibility h2 span.inline-flex {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .available-text-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }ccccccccccccytj
+
+  .rotating-text-box {
+    background-color: #67e8f9; /* Tailwind's bg-cyan-300 */
+    color: black;
+    overflow: hidden;
+    padding-top: 2px;        /* py-0.5 */
+    padding-bottom: 2px;
+    padding-left: 8px;       /* px-2 */
+    padding-right: 8px;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;   /* rounded-lg */
+  
+    /* Responsive padding */
+  }
+  
+  @media (min-width: 640px) {
+    .rotating-text-box {
+      padding-top: 4px;       /* sm:py-1 */
+      padding-bottom: 4px;
+      padding-left: 8px;      /* sm:px-2 */
+      padding-right: 8px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .rotating-text-box {
+      padding-top: 8px;       /* md:py-2 */
+      padding-bottom: 8px;
+      padding-left: 12px;     /* md:px-3 */
+      padding-right: 12px;
+    }
+  }
+  
+  .rotating-text-box {
+    border: 2px solid blue;
+  }
+  
+  @media (max-width: 992px) {
+    .flexibility {
+      padding: 60px 20px;
+    }
+    
+    .flexibility h2 {
+      top: -70px;
+    }
+    
+    .use-cases {
+      gap: 50px;
+    }
+    
+    .gaming, .editing {
+      width: 250px;
+      height: 250px;
+    }
+    
+    .gaming img {
+      width: 280px;
+    }
+    
+    .editing img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .flexibility {
+      padding: 40px 15px;
+    }
+    
+    .flexibility h2 {
+      top: -50px;
+      font-size: 1.8rem;
+    }
+    
+    .use-cases {
+      gap: 30px;
+    }
+    
+    .container {
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .gaming, .editing {
+      width: 220px;
+      height: 220px;
+    }
+    
+    .gaming img {
+      width: 220px;
+    }
+    
+    .editing img {
+      width: 70px;
+      height: 70px;
+    }
+    
+    .icons {
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .flexibility h2 {
+      font-size: 1.5rem;
+    }
+    
+    .gaming, .editing {
+      width: 180px;
+      height: 180px;
+    }
+    
+    .gaming img {
+      width: 180px;
+    }
+    
+    .editing img {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .icons {
+      gap: 15px;
+    }
+  }
+  

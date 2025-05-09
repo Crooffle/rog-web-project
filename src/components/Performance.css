@@ -1,0 +1,149 @@
+.performance {
+    position: relative;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(0,255,0,0.4) 10%, black 60%);
+    color: white;
+    overflow: hidden;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+/* Efek Hover untuk Logo */
+.logo-container img {
+    height: 80px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+}
+
+/* Efek Hover untuk Judul & Subjudul */
+.performance-content h2, 
+.performance-content .subheading, 
+.performance-content .highlight {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Styling Text */
+.subheading {
+    color: #b377ff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+}
+
+.highlight {
+    font-size: 1.3rem;
+    color: #b377ff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* 4. Teks RTX 5080 jadi hijau saat hover */
+.performance-content h2:first-of-type:hover {
+    color: limegreen;
+    transition: color 0.3s ease-in-out;
+}
+
+/* 5. Teks Ryzen HX 370 jadi orange saat hover */
+.performance-content h2:nth-of-type(2):hover {
+    color: orange;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Zoom gambar di section .performance */
+.performance .logo-container img{
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.performance .logo-container img:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px white);
+}
+
+@media (max-width: 992px) {
+    .logo-container {
+      gap: 30px;
+    }
+    
+    .logo-container img {
+      height: 60px;
+    }
+    
+    .subheading {
+      font-size: 1.3rem;
+    }
+    
+    h2 {
+      font-size: 2rem;
+    }
+    
+    .highlight {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo-container {
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .logo-container img {
+      height: 50px;
+      margin-bottom: 10px;
+    }
+    
+    .subheading {
+      font-size: 1.2rem;
+    }
+    
+    h2 {
+      font-size: 1.6rem;
+    }
+    
+    .highlight {
+      font-size: 1rem;
+    }
+    
+    .performance-content {
+      padding: 0 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-container img {
+      height: 40px;
+    }
+    
+    .subheading {
+      font-size: 1rem;
+    }
+    
+    h2 {
+      font-size: 1.4rem;
+    }
+  }

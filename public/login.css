@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'ROG LyonsType Regular';
+    src: url('../font/ROGLyonsTypeRegular3.woff') format('woff');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #000);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'ROG LyonsType Regular';
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ff0000;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #cc0000;
+}
+
+.back {
+    margin-top: 15px;
+}
+
+.back a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back a:hover {
+    text-decoration: underline;
+}
