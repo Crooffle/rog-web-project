@@ -1,5 +1,6 @@
-# rog-web-project
+# ROG WEB (School Project)
 
+This project is a project that I made to complete a school assignment
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
